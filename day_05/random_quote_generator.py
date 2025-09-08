@@ -5,29 +5,6 @@
 # Step 3: Define a function that returns a random quote when called
 # Step 4: Define a main function that runs the program. Make sure to call the function.
 
-'''
-* Objective: In the file `random_quote_generator.py`, read lines from `quotes.txt` use the random `package` to generate random quotes for a user.
-    * Create a function load_quotes()
-        * *Parameter: file_name_1.txt* 
-        * *Return Value: List of quotes from file_name_1.txt*
-    * Create a function get_random_quote()
-        * *Parameter: list of quotes*
-        * *Return Value: random quote string*
-    * Create a function add_to_favorites()
-        * *Parameter: file_name_2.txt and random_quote*
-        * *Doesn't have a return value, but should create a new file and add quotes if user chooses quote as a favorite.  
-    * Create a function view_favorites()
-        * *Parameter: file_name_2*
-        * *Return Value: List of quotes from file_name_2.txt*
-
-    * Challenge: Create a new file called  `authors.txt` with the authors of each quote on the same line number as the quote.  
-    Modify your code to print `"Quote" - Author`
-
-### Tips and Hints
-* Always use `.strip()` to remove `\n` from lines. (new line markers)
-* Test your functions independently.
-'''
-
 import random
 
 # Functions takes in filename parameter and returns list of strings with lines from file
@@ -63,7 +40,7 @@ def main():
     if view.lower() == "yes":
         view_favorites("favorites.txt")
 
-    return None 
+    return None
 
 if __name__ == "__main__":  
     main()
