@@ -1,0 +1,57 @@
+[
+    {
+        "age": 24,
+        "hobby": "yoga",
+        "name": "Sophia"
+    },
+    {
+        "age": 33,
+        "hobby": "freelancing",
+        "name": "Steven"
+    },
+    {
+        "age": 47,
+        "hobby": "hiking",
+        "name": "Alex"
+    },
+    {
+        "age": 24,
+        "hobby": "yoga",
+        "name": "Sophia"
+    },
+    {
+        "age": 18,
+        "hobby": "calisthenics",
+        "name": "Lorcan"
+    },
+    {
+        "age": 24,
+        "hobby": "yoga",
+        "name": "Sophia"
+    },
+    {
+        "age": 24,
+        "hobby": "yoga",
+        "name": "Sophia"
+    },
+    {
+        "age": 10,
+        "hobby": "eating",
+        "name": "Artiom"
+    },
+    {
+        "age": 45,
+        "hobby": "biking",
+        "name": "Emily"
+    },
+    {
+        "age": 60,
+        "hobby": "reading",
+        "name": "Amir"
+    },
+    {
+        "age": 24,
+        "hobby": "yoga",
+        "name": "Sophia"
+    }
+]

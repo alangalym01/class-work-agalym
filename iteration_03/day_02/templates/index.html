@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>Home</title>
+{% endblock head %}
+
+{% block body %}
+
+<div class="create_user">
+    <form action="{{ url_for('user') }}">
+        <input type="submit" value="Create user" class="btn">
+    </form>
+</div>
+
+{% endblock body %}
