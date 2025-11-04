@@ -23,6 +23,14 @@ header a {
     color: #333;
 }
 
+nav a {
+    margin-right: 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
 .create_user {
     max-width: 400px;
     margin: 50px auto;
@@ -42,15 +50,47 @@ header a {
 
 .btn:hover {
     background: #f9fafb;
-    border: solid 1px #09458f;
+    border: solid 2px #09458f;
+    padding: 15px 23px;
     color: #09458f;
 }
 
 .user_list {
     margin: 30px auto;
-    max-width: 900px;
+    max-width: 1200px;
 }
 
-.list_item {
+table {
     margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+th {
+    background-color: #09458f;
+    color: white;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.btn_green {
+    padding: 10px 15px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.btn_red {
+    padding: 10px 15px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
 }

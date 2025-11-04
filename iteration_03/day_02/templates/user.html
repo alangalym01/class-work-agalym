@@ -6,10 +6,27 @@
 
 {% block body %}
 
-<h3>Generated user: </h3>
-<ul>
-    <li>{{ user.name }}</li>
-    <li>{{ user.age }}</li>
-    <li>{{ user.hobby }}</li>
-</ul>
+<div class="user_list">
+    <h3>Generated user</h3>
+    <table border="1" cellpadding="8" cellspacing="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Hobby</th>
+                <th>Add user</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ user.name }}</td>
+                <td>{{ user.age }}</td>
+                <td>{{ user.hobby }}</td>
+                <td>
+                    <button class="btn_green">Add</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 {% endblock body %}
