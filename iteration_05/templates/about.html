@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}About me{% endblock title %}
+
+{% block content %}
+
+<h1>My name is {{info.name}}. Here's a paragraph about me!</h1>
+<p>I'm a passionate learner of programming and web development based in {{ info.hometown }}. 
+    I enjoy using {{ interest }} because it lets me build web applications with frameworks like Django and Flask. 
+    I love creating apps that connect people and solve real-world problems.</p>
+
+{% if info.age >= 18 %}
+    <p>I'm {{info.age}} years old, I'm an adult.</p>
+{% else %}
+    <p>I'm only {{info.age}} years old, I'm still a kid.</p>
+{% endif %}
+
+<p>Here are my techincal skills:</p>
+<ul>
+    {% for item in  skills %}
+        <li>{{ item }}</li>
+    {% endfor %}
+</ul>
+
+
+{% endblock content %}

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}About me{% endblock title %}
+
+{% block content %}
+
+<h1>Contact me!</h1>
+{% if info.email is defined %}
+    <p>Email: {{ info.email }}</p>
+{% else %}
+    <p>Email not available.</p>
+{% endif %}
+
+{% if info.phone is defined %}
+    <p>Phone number: {{ info.phone }}</p>
+{% else %}
+    <p>Phone number not available.</p>
+{% endif %}
+
+{% if info.ig is defined %}
+    <p>Instagram: {{ info.ig }}</p>
+{% else %}
+    <p>Instagram not available.</p>
+{% endif %}
+
+{% endblock content %}
