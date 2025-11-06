@@ -3,24 +3,34 @@
 {% block title %}About me{% endblock title %}
 
 {% block content %}
+<div class="max-w-[1000px] mx-auto py-8">
+    <h1 class="font-bold text-[2rem]">Contact me!</h1>
+    <div class="mt-4">
+        <div class="p-4 bg-white hover:shadow border-2 border-blue-300 rounded mt-5">
+            {% if info.email is defined %}
+                <p>Email: {{ info.email }}</p>
+            {% else %}
+                <p>Email not available.</p>
+            {% endif %}
+        </div>
+        
+        <div class="p-4 bg-white hover:shadow border-2 border-blue-300 rounded mt-5">
+            {% if info.phone is defined %}
+                <p>Phone number: {{ info.phone }}</p>
+            {% else %}
+                <p>Phone number not available.</p>
+            {% endif %}
+        </div>
+        
+        <div class="p-4 bg-white hover:shadow border-2 border-blue-300 rounded mt-5">
+            {% if info.ig is defined %}
+                <p>Instagram: {{ info.ig }}</p>
+            {% else %}
+                <p>Instagram not available.</p>
+            {% endif %}
+        </div>
+    </div>
+</div>
 
-<h1>Contact me!</h1>
-{% if info.email is defined %}
-    <p>Email: {{ info.email }}</p>
-{% else %}
-    <p>Email not available.</p>
-{% endif %}
-
-{% if info.phone is defined %}
-    <p>Phone number: {{ info.phone }}</p>
-{% else %}
-    <p>Phone number not available.</p>
-{% endif %}
-
-{% if info.ig is defined %}
-    <p>Instagram: {{ info.ig }}</p>
-{% else %}
-    <p>Instagram not available.</p>
-{% endif %}
 
 {% endblock content %}

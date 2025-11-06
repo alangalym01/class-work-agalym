@@ -8,17 +8,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title> {% block title %}Flask UI{% endblock %} </title>
 </head>
 
 <!-- Body tag opens the main visible part of the webpage. Everything shown in the browser window lives inside here.-->
 <body>
     <!-- Navigation bar because I want all my pages to have the ability to navigate between other routes -->
-    <nav>
-        <a href="{{ url_for('home') }}">Home</a> |
-        <a href="{{ url_for('contact') }}">Contact</a> |
-        <a href="{{ url_for('about') }}">About</a>
-    </nav>
+    <header class="flex justify-between py-6 px-8 shadow items-center">
+        <h1 class="text-xl font-bold"><a href="{{ url_for('home') }}">Portfolio</a></h1>
+        <nav class="flex gap-4">
+            <a href="{{ url_for('home') }}" class="hover:underline">HOME</a>
+            <a href="{{ url_for('about') }}" class="hover:underline">ABOUT</a>
+            <a href="{{ url_for('contact') }}" class="hover:underline">CONTACT</a>
+        </nav>
+    </header>
     <hr> <!-- This creates a horizontal line -->
 
     <!-- This is where child templates will insert content -->

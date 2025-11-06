@@ -8,15 +8,15 @@ data = {
         "name":"Alan",
         "age":18,
         "phone":"123-456-7890",
-        "email":"trash@email.com",
-        "hometown":"Brooklyn, NYC"
+        "email":"agalym26@nmhschool.org",
+        "hometown":"Gill, MA"
     },
     "interest": "Python",
-    "skills": [
+    "skills": {
         "Flask",
         "Django",
         "React JS",
-    ],
+    },
 }
 
 @app.route("/")

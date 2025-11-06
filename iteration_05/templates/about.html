@@ -3,24 +3,32 @@
 {% block title %}About me{% endblock title %}
 
 {% block content %}
-
-<h1>My name is {{info.name}}. Here's a paragraph about me!</h1>
-<p>I'm a passionate learner of programming and web development based in {{ info.hometown }}. 
-    I enjoy using {{ interest }} because it lets me build web applications with frameworks like Django and Flask. 
-    I love creating apps that connect people and solve real-world problems.</p>
-
-{% if info.age >= 18 %}
-    <p>I'm {{info.age}} years old, I'm an adult.</p>
-{% else %}
-    <p>I'm only {{info.age}} years old, I'm still a kid.</p>
-{% endif %}
-
-<p>Here are my techincal skills:</p>
-<ul>
-    {% for item in  skills %}
-        <li>{{ item }}</li>
-    {% endfor %}
-</ul>
+<div class="max-w-[1000px] mx-auto py-8">
+    <div>
+        <h1 class="font-bold text-[2rem]">My name is {{info.name}}. Here's a paragraph about me!</h1>
+        <p class="mt-7">I'm a passionate learner of programming and web development based in {{ info.hometown }}. 
+            I enjoy using {{ interest }} because it lets me build web applications with frameworks like Django and Flask. 
+            I love creating apps that connect people and solve real-world problems.</p>
+    </div>
+    
+    {% if info.age >= 18 %}
+        <p>I'm {{info.age}} years old, I'm an adult.</p>
+    {% else %}
+        <p>I'm only {{info.age}} years old, I'm still a kid.</p>
+    {% endif %}
+    
+    <div class="mt-9">
+        <h3 class="text-lg font-bold">Techincal skills</h3>
+        
+        <div class="grid grid-cols-3 gap-4">
+            {% for item in  skills %}
+                <div class="p-4 bg-white hover:shadow border-2 border-blue-300 rounded mt-5 text-center">
+                    {{ item }}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
 
 
 {% endblock content %}
